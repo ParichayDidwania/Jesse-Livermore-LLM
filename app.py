@@ -6,7 +6,7 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 from helper import PositionalEncoding, MultiHeadAttentionLayer, create_padding_mask, create_look_ahead_mask, predict
 
 # Load your trained model
-model = load_model('./v1/model.h5', custom_objects={
+model = load_model('./models/v2/model.h5', custom_objects={
         "PositionalEncoding": PositionalEncoding,
         "MultiHeadAttentionLayer": MultiHeadAttentionLayer,
     })
@@ -60,7 +60,3 @@ def submit():
         st.write("Please type a message.")
 
 st.text_input("You: ", key="ti", on_change=submit)
-
-
-
-

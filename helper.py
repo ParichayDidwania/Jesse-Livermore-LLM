@@ -144,8 +144,8 @@ def create_look_ahead_mask(x):
     padding_mask = create_padding_mask(x)
     return tf.maximum(look_ahead_mask, padding_mask)
 
-MAX_LENGTH = 150
-tokenizer = tfds.deprecated.text.SubwordTextEncoder.load_from_file('tokenizer_vocab')
+MAX_LENGTH = 78
+tokenizer = tfds.deprecated.text.SubwordTextEncoder.load_from_file('./models/v2/tokenizer_vocab')
 
 START_TOKEN, END_TOKEN = [tokenizer.vocab_size], [tokenizer.vocab_size + 1]
 
