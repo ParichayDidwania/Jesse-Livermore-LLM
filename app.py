@@ -22,7 +22,7 @@ def generate_response(text, model):
     return prediction
 
 # Streamlit UI
-st.title("Chatbot with Streamlit and Keras Model")
+st.title("Livermore Chatbot")
 st.write("Ask anything!")
 
 st.markdown(
