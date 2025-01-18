@@ -1,7 +1,7 @@
 
 # Jesse Livermore LLM Chatbot
 
-This project aims to develop a chatbot that emulates the trading philosophies and insights of the legendary stock trader, Jesse Livermore. By leveraging transformer-based models, the chatbot provides responses inspired by Livermore's principles.
+This project demonstrates how to build a large language model (LLM) from scratch using a custom dataset derived from Jesse Livermore's iconic book, *Reminiscences of a Stock Operator*. The model is trained to emulate Livermore's trading philosophies and insights. After training, the model is deployed as a chatbot with a user-friendly interface built using Streamlit.
 
 ## Repository Structure
 
